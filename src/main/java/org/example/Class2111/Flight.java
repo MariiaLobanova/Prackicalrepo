@@ -4,21 +4,19 @@ import java.sql.*;
 // CRUD for Flight table
 public class Flight {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/Airplane Ticket Reservation System";
-        String user = "root";
-        String password = "Smetana11!!";
+        Connection connection = null;
+        try {
+            connection = DBUtil.getConnection();
+            if(connection!=null){
+                System.out.println("Connected to the database successfully");
 
-        try (Connection conn = DriverManager.getConnection(url, user,
-                password)) {
-            System.out.println("Connected to the database successfully");
+                //insertInfoFlight(conn, 36, "airline33", "Samara", "Berlin",
+                //      "2023-11-20 12:00:00","2023-11-20 16:00:00",50.99,100);
+                //updateFlightAvailableseat(conn, 33,99);
+                //deleteFlight(conn,35);
+                displayAllFlight(connection);
 
-            //insertInfoFlight(conn, 36, "airline33", "Samara", "Berlin",
-            //      "2023-11-20 12:00:00","2023-11-20 16:00:00",50.99,100);
-            //updateFlightAvailableseat(conn, 33,99);
-            //deleteFlight(conn,35);
-            displayAllFlight(conn);
-
-
+            }
         } catch (SQLException e) {
             e.printStackTrace();
             throw new RuntimeException(e);

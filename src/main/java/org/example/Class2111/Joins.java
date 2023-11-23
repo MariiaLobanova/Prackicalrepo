@@ -4,20 +4,18 @@ import java.sql.*;
 
 public class Joins {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/Airplane Ticket Reservation System";
-        String user = "root";
-        String password = "Smetana11!!";
+        Connection connection = null;
+        try {
+            connection = DBUtil.getConnection();
+            if(connection!=null) {
+                System.out.println("Connected to the database successfully");
 
-        try (Connection conn = DriverManager.getConnection(url, user,
-                password)) {
-            System.out.println("Connected to the database successfully");
+                customerBookingJoins(connection);
+                listFlightWithDepData(connection, "Berlin", null);
+                listFlightWithDepData(connection, null, "2023-11-20 12:00:00");
+                bookingByCustomer(connection, "Anton");
 
-            customerBookingJoins(conn);
-            listFlightWithDepData(conn, "Berlin", null);
-            listFlightWithDepData(conn, null, "2023-11-20 12:00:00");
-            bookingByCustomer(conn,"Anton");
-
-
+            }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -34,8 +32,12 @@ public class Joins {
              ResultSet rs = preparedStatement.executeQuery()) {
             System.out.println("Customers/ bookings ");
             while (rs.next()) {
-                System.out.println(rs.getString(1) + " | " + rs.getInt(2) + " | " + rs.getString(3) + " | " +
-                        rs.getInt(4) + " | " + rs.getString(5));
+                System.out.printf("%-15s | %-5s | %-15s | %-15s%n",
+                        rs.getString(1),
+                        rs.getInt(2),
+                        rs.getString(3),
+                        rs.getInt(4),
+                        rs.getString(5));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -56,14 +58,15 @@ public class Joins {
             ResultSet rs = pst.executeQuery();
             System.out.println("data about flight: ");
             while (rs.next()) {
-                System.out.println(rs.getInt(1) + " | "
-                        + rs.getString(2) + " | "
-                        + rs.getString(3) + " | "
-                        + rs.getString(4) + " | "
-                        + rs.getString(5) + " | "
-                        + rs.getString(6) + " | "
-                        + rs.getDouble(7) + " | "
-                        + rs.getString(8));
+                System.out.printf("%-3s | %-10s | %-10s | %-10s | %-15s | %-10s | %-5s | %-5s%n",
+                        rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getString(4),
+                        rs.getString(5),
+                        rs.getString(6),
+                        rs.getDouble(7),
+                        rs.getString(8));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);

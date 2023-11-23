@@ -4,16 +4,14 @@ import java.sql.*;
 
 public class Booking {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/Airplane Ticket Reservation System";
-        String user = "root";
-        String password = "Smetana11!!";
+        Connection connection = null;
+        try {
+            connection = DBUtil.getConnection();
+            if(connection!=null) {
+                System.out.println("Connected to the database successfully");
 
-        try (Connection conn = DriverManager.getConnection(url, user,
-                password)) {
-            System.out.println("Connected to the database successfully");
-
-            displayAllBooking(conn);
-
+                displayAllBooking(connection);
+            }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

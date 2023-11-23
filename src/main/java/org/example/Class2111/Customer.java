@@ -4,19 +4,16 @@ import java.sql.*;
 
 public class Customer {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/Airplane Ticket Reservation System";
-        String user = "root";
-        String password = "Smetana11!!";
+        Connection connection = null;
+        try {
+            connection = DBUtil.getConnection();
+            if(connection!=null) {
+                System.out.println("Connected to the database successfully");
 
-        try (Connection conn = DriverManager.getConnection(url, user,
-                password)) {
-            System.out.println("Connected to the database successfully");
-
-            // createCustomer(conn, 33, "Avatar", "avatar@gmail.com", "5432617253");
-            displayAllCustomer(conn);
-            displayCustomerRecord(conn, "Anton", "vera@gmail.com");
-
-
+                // createCustomer(conn, 33, "Avatar", "avatar@gmail.com", "5432617253");
+                displayAllCustomer(connection);
+                displayCustomerRecord(connection, "Anton", "vera@gmail.com");
+            }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -56,8 +53,11 @@ public class Customer {
              ResultSet rs = preparedStatement.executeQuery()) {
             System.out.println("All customers: ");
             while (rs.next()) {
-                System.out.println(rs.getInt(1) + " | " + rs.getString(2) + " | " + rs.getString(3) + " | "
-                        + rs.getString(4));
+                System.out.printf("%-5s | %-10s | %-15s | %-15s%n",
+                        rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getString(4));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -85,8 +85,11 @@ public class Customer {
             ResultSet rs = preparedStatement.executeQuery();
             System.out.println("data about customer: ");
             while (rs.next()) {
-                System.out.println(rs.getInt(1) + " | " + rs.getString(2) + " | " + rs.getString(3) + " | "
-                        + rs.getString(4));
+                System.out.printf("%-5s | %-10s | %-15s | %-15s%n",
+                        rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getString(4));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
