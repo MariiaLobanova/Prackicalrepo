@@ -3,21 +3,6 @@ package org.example.Class2111;
 import java.sql.*;
 
 public class Customer {
-    public static void main(String[] args) {
-        Connection connection = null;
-        try {
-            connection = DBUtil.getConnection();
-            if(connection!=null) {
-                System.out.println("Connected to the database successfully");
-
-                // createCustomer(conn, 33, "Avatar", "avatar@gmail.com", "5432617253");
-                displayAllCustomer(connection);
-                displayCustomerRecord(connection, "Anton", "vera@gmail.com");
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
 
     public static void createCustomer(Connection connection, int CustomersId, String name, String email, String phone) {
         String query = "INSERT INTO Customers( ) VALUES (?, ?, ?, ?)";

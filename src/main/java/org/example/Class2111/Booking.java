@@ -3,19 +3,7 @@ package org.example.Class2111;
 import java.sql.*;
 
 public class Booking {
-    public static void main(String[] args) {
-        Connection connection = null;
-        try {
-            connection = DBUtil.getConnection();
-            if(connection!=null) {
-                System.out.println("Connected to the database successfully");
 
-                displayAllBooking(connection);
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
     public static void displayAllBooking(Connection connection) {
         String query = "SELECT * FROM Booking;";
         try (PreparedStatement preparedStatement = connection.prepareStatement(query);
