@@ -5,27 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3ac9cbb-1d58-4832-a4e6-54ab239aecbe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/ProductResourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Class2811/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Class2811/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Class2811/UserHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Class2911RESTUserApp/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Class2911RESTUserApp/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Class2911RESTUserApp/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Class2911RESTUserApp/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Class2911RESTUserApp/ProductResourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Class2911RESTUserApp/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Class2911RESTUserApp/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Class2911RESTUserApp/UserResourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ConvertApplication/Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Class3011UserTask/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Class3011UserTask/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Class3011UserTask/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/ProductResourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/ProductResourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Class2911RESTUserApp/ProductResourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Class2911RESTUserApp/ProductResourse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +33,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -87,13 +78,13 @@
       <recent name="org.example.Class2911ECmercePlatform" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Class2911ECmercePlatform.Main">
-    <configuration name="Class2911ECmercePlatform.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Class2911ECmercePlatform.Main" />
+  <component name="RunManager" selected="Application.Class2911ECommercePlatform.Main">
+    <configuration name="Class2911ECommercePlatform.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Class2911ECommercePlatform.Main" />
       <module name="ProjectMav" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Class2911ECmercePlatform.*" />
+          <option name="PATTERN" value="Class2911ECommercePlatform.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,19 +98,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.ConvertApplication.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Class2111.Main" />
-      <module name="ProjectMav" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.Class2111.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,13 +131,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Class2911ECmercePlatform.Main" />
+        <item itemvalue="Application.Class2911ECommercePlatform.Main" />
+        <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="Application.org.example.Class2911RESTUserApp.Main" />
         <item itemvalue="Application.Converter" />
         <item itemvalue="Application.org.example.Class2811.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +152,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700562344675</updated>
-      <workItem from="1700562346162" duration="87809000" />
+      <workItem from="1700562346162" duration="108818000" />
     </task>
     <servers />
   </component>

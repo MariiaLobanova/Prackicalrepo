@@ -1,4 +1,4 @@
-package Class2911ECmercePlatform;
+package Class2911ECommercePlatform;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

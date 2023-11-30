@@ -1,4 +1,4 @@
-package Class2911ECmercePlatform;
+package Class2911ECommercePlatform;
 
 public class Product {
     private int id;
@@ -14,6 +14,8 @@ public class Product {
         this.category = category;
         this.stockQuantity = stockQuantity;
     }
+
+    public Product(){}
 
     public int getId() {
         return id;

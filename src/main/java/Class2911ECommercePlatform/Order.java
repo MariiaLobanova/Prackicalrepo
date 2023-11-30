@@ -1,4 +1,4 @@
-package Class2911ECmercePlatform;
+package Class2911ECommercePlatform;
 // id, productId, quantity, customer details.
 public class Order {
     private int id;
@@ -12,6 +12,7 @@ public class Order {
         this.quantity = quantity;
         this.customerDetails = customerDetails;
     }
+    public Order(){}
 
     public int getId() {
         return id;

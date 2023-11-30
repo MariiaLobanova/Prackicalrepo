@@ -1,4 +1,4 @@
-package Class2911ECmercePlatform;
+package Class2911ECommercePlatform;
 
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -17,10 +17,12 @@ public class Main {
        //pd.addProduct();
 
 
-        Product product = new Product(0, "sweatshort", 12.99, "clothes", 50);
+       // Product product = new Product(0, "sweatshort", 12.99, "clothes", 50);
 
-        ProductDao pd = new ProductDao();
-        pd.addProduct(product);
+      // ProductDao pd = new ProductDao();
+        //pd.addProduct(product);
+        //pd.getAllProductByCategoryAndPrice("clothes", 5.00,15.00);
+
     }
 
 }

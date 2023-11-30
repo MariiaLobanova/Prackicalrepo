@@ -11,7 +11,7 @@ public class ProductResourse {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Product> getUsers() {
+    public List<Product> getProduct() {
         return productDao.getAllProducts();
     }
 

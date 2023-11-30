@@ -1,4 +1,4 @@
-package Class2911ECmercePlatform;
+package Class2911ECommercePlatform;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -10,7 +10,7 @@ public class ProductResourse {
         ProductDao productDao = new ProductDao();
         @GET
         @Produces(MediaType.APPLICATION_JSON)
-        public List<Product> getUsers() {
+        public List<Product> getProduct() {
             return productDao.getAllProduct();
         }
 
@@ -30,7 +30,7 @@ public class ProductResourse {
         @PUT
         @Path("/{id}")
         @Consumes(MediaType.APPLICATION_JSON)
-        public void updateUser(@PathParam("id") int id, Product product) {
+        public void updateProduct(@PathParam("id") int id, Product product) {
             product.setId(id);
             productDao.updateProduct(product);
         }
@@ -40,5 +40,15 @@ public class ProductResourse {
         public void deleteProduct(@PathParam("id") int id) {
             productDao.deleteProduct(id);
         }
+
+  /*  @GET
+    @Path("/{category}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Product> getProductsByCategoryAndPrice(@PathParam("category") String category,
+                                                       @QueryParam("minPrice") double minPrice,
+                                                       @QueryParam("maxPrice") double maxPrice) {
+        return productDao.getAllProductByCategoryAndPrice(category, minPrice, maxPrice);
+    }*/
+
 
 }

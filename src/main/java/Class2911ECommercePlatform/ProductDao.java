@@ -1,4 +1,4 @@
-package Class2911ECmercePlatform;
+package Class2911ECommercePlatform;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -62,10 +62,11 @@ public class ProductDao {
 
     public void updateProduct(Product product) {
         try (Connection connection = DBConnection.getConnection()) {
-            PreparedStatement ps = connection.prepareStatement("UPDATE products SET price = ?, stockQuantity = ? WHERE id = ?");
-            ps.setInt(1, product.getId());
-            ps.setDouble(2, product.getPrice());
-            ps.setInt(3, product.getStockQuantity());
+            PreparedStatement ps = connection.prepareStatement("UPDATE products SET price = ?, stockQuantity = ? WHERE id = ?;");
+
+            ps.setDouble(1, product.getPrice());
+            ps.setInt(2, product.getStockQuantity());
+            ps.setInt(3, product.getId());
 
             ps.executeUpdate();
         } catch (SQLException e) {
@@ -82,4 +83,38 @@ public class ProductDao {
             e.printStackTrace();
         }
     }
+   /* public List<Product> getAllProductByCategoryAndPrice(String category, double minPrice, double maxPrice ) {
+        List<Product> productList = new ArrayList<>();
+        try (Connection connection = DBConnection.getConnection()) {
+
+            if (minPrice > maxPrice) {
+            throw new IllegalArgumentException("minPrice should be less than or equal to maxPrice.");
+        }
+
+            String query = "SELECT * FROM products WHERE category = ? AND price BETWEEN ? AND ?;";
+            try (PreparedStatement ps = connection.prepareStatement(query)) {
+                ps.setString(1, category);
+                ps.setDouble(2, minPrice);
+                ps.setDouble(3, maxPrice);
+
+                try (ResultSet rs = ps.executeQuery()) {
+                    while (rs.next()) {
+                        Product product = new Product(
+                                rs.getInt("id"),
+                                rs.getString("name"),
+                                rs.getDouble("price"),
+                                rs.getString("category"),
+                                rs.getInt("stockQuantity")
+                        );
+                        productList.add(product);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return productList;
+
+    }*/
+
 }
