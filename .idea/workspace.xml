@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3ac9cbb-1d58-4832-a4e6-54ab239aecbe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Class3011UserTask/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Class3011UserTask/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Class3011UserTask/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/OrderResourse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Class2911ECmercePlatform/ProductResourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/ProductResourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Class2911RESTUserApp/ProductResourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Class2911RESTUserApp/ProductResourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/ProductResourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Class2911ECommercePlatform/ProductResourse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +146,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700562344675</updated>
-      <workItem from="1700562346162" duration="108818000" />
+      <workItem from="1700562346162" duration="116813000" />
     </task>
     <servers />
   </component>

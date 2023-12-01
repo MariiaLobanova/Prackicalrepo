@@ -17,7 +17,7 @@ public class ProductResourse {
         @GET
         @Path("/{id}")
         @Produces(MediaType.APPLICATION_JSON)
-        public Product getProduct(@PathParam("id") int id) {
+        public Product getProductById(@PathParam("id") int id) {
             return productDao.getProduct(id);
         }
 
@@ -41,14 +41,13 @@ public class ProductResourse {
             productDao.deleteProduct(id);
         }
 
-  /*  @GET
-    @Path("/{category}")
+    @GET
+    @Path("/category/{category}")
     @Produces(MediaType.APPLICATION_JSON)
     public List<Product> getProductsByCategoryAndPrice(@PathParam("category") String category,
                                                        @QueryParam("minPrice") double minPrice,
                                                        @QueryParam("maxPrice") double maxPrice) {
+
         return productDao.getAllProductByCategoryAndPrice(category, minPrice, maxPrice);
-    }*/
-
-
+    }
 }

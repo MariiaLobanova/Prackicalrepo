@@ -83,7 +83,7 @@ public class ProductDao {
             e.printStackTrace();
         }
     }
-   /* public List<Product> getAllProductByCategoryAndPrice(String category, double minPrice, double maxPrice ) {
+    public List<Product> getAllProductByCategoryAndPrice(String category, double minPrice, double maxPrice ) {
         List<Product> productList = new ArrayList<>();
         try (Connection connection = DBConnection.getConnection()) {
 
@@ -115,6 +115,6 @@ public class ProductDao {
         }
         return productList;
 
-    }*/
+    }
 
 }
